@@ -1,0 +1,12 @@
+=border($bt: $bw-x0-25, $br: $bw-x0-25, $bb: $bw-x0-25, $bl: $bw-x0-25, $bc: var(--text), $opacity: 1 ) 
+  border-top: $bt solid $bc
+  border-right: $br solid $bc
+  border-bottom: $bb solid $bc
+  border-left: $bl solid $bc
+  @include brd-cr(border-color, $bc, $opacity)
+
+
+=mobile_scroll 
+  &::-webkit-scrollbar 
+    width: 0
+  

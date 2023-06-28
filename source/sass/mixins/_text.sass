@@ -1,0 +1,12 @@
+=break_word()
+  overflow-wrap: break-word
+  word-wrap: break-word
+  word-break: break-word
+
+=text_count_line($count)
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: $count
+  -webkit-box-orient: vertical
+  +break_word
