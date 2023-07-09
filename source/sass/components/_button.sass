@@ -1,0 +1,38 @@
+.button
+	color: $white
+	border: $bw-x0-5 solid $gray
+	background: $gray
+	border-radius: $br-x2
+	box-sizing: border-box
+	padding: $gap-x3 $gap-x7
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: .02em
+	font:
+		size: $fs-x4
+		weight: 600
+	+transition
+	
+	&.full
+		width: $size-100
+	&.disabled
+		opacity: .2
+		cursor: not-allowed
+		border-color: $gray
+		background: $gray
+	&.border
+		background: $tr
+		color: $gray
+
+	&.hover
+		&-black
+			&:hover
+				color: $white
+				background: $text
+				border-color: $text
+		&-border
+			&__black
+				&:hover
+					color: $text
+					border-color: $text

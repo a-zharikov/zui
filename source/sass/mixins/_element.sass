@@ -1,9 +1,14 @@
-=border($bt: $bw-x0-25, $br: $bw-x0-25, $bb: $bw-x0-25, $bl: $bw-x0-25, $bc: var(--text), $opacity: 1 ) 
-  border-top: $bt solid $bc
-  border-right: $br solid $bc
-  border-bottom: $bb solid $bc
-  border-left: $bl solid $bc
-  @include brd-cr(border-color, $bc, $opacity)
+=brd-cr($property, $border-color: transparent, $opacity: 1) 
+  #{$property}: rgba($border-color, $opacity)
+
+  
+=border($bt: 1px, $br: 1px, $bb: 1px, $bl: 1px, $bc: var(--text), $opacity: 1 ) 
+  border-top: #{$bt}px solid $bc
+  border-right: #{$br}px solid $bc
+  border-bottom: #{$bb}px solid $bc
+  border-left: #{$bl}px solid $bc
+  +brd-cr(border-color, $bc, $opacity)
+
 
 
 =mobile_scroll 
