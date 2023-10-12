@@ -4,10 +4,8 @@ input {
   border-radius: $br-x2;
   box-sizing: border-box;
   padding: $gap-x3 $gap-x4;
-  color: $text;
-  font: {
-    size: $fs-x4;
-  }
+  color: $heading;
+  @include text($body-normal-x4);
   @include transition;
   &:focus {
     border-color: $primary;

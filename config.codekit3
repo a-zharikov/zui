@@ -63,6 +63,17 @@
       "oS" : 1,
       "rAC" : 0
     },
+    "\/source\/js\/_guideline.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/guideline.min.js",
+      "oF" : 3,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/source\/scss\/animation\/_rotation.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -76,7 +87,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/_button.scss" : {
       "aP" : 0,
@@ -91,7 +102,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/_form.scss" : {
       "aP" : 0,
@@ -106,7 +117,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_checkbox.scss" : {
       "aP" : 0,
@@ -121,7 +132,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_file.scss" : {
       "aP" : 0,
@@ -136,7 +147,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_input.scss" : {
       "aP" : 0,
@@ -151,7 +162,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_radio.scss" : {
       "aP" : 0,
@@ -166,7 +177,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_select.scss" : {
       "aP" : 0,
@@ -181,7 +192,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/components\/form\/_textarea.scss" : {
       "aP" : 0,
@@ -196,7 +207,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/core\/_base.scss" : {
       "aP" : 0,
@@ -211,7 +222,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/core\/_fonts.scss" : {
       "aP" : 0,
@@ -226,7 +237,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/core\/_modifier.scss" : {
       "aP" : 0,
@@ -241,7 +252,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/core\/_reset.scss" : {
       "aP" : 0,
@@ -256,7 +267,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_adaptive.scss" : {
       "aP" : 0,
@@ -271,7 +282,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_align.scss" : {
       "aP" : 0,
@@ -286,7 +297,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_css3.scss" : {
       "aP" : 0,
@@ -301,7 +312,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_element.scss" : {
       "aP" : 0,
@@ -316,7 +327,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_layout.scss" : {
       "aP" : 0,
@@ -331,7 +342,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_text.scss" : {
       "aP" : 0,
@@ -346,7 +357,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/mixins\/_typography.scss" : {
       "aP" : 0,
@@ -361,9 +372,9 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
-    "\/source\/scss\/pages\/_page.scss" : {
+    "\/source\/scss\/pages\/_guideline.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -372,11 +383,71 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/build\/css\/_page.css",
+      "oAP" : "\/build\/css\/_guideline.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
+    },
+    "\/source\/scss\/pages\/_guideline\/_buttons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/css\/_buttons.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/scss\/pages\/_guideline\/_icons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/css\/_icons.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/scss\/pages\/_guideline\/_sidebar.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/css\/_sidebar.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/scss\/pages\/_guideline\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/css\/_typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/source\/scss\/styles.scss" : {
       "aP" : 0,
@@ -391,7 +462,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_border.scss" : {
       "aP" : 0,
@@ -406,7 +477,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_color.scss" : {
       "aP" : 0,
@@ -421,7 +492,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_font.scss" : {
       "aP" : 0,
@@ -436,7 +507,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_gap.scss" : {
       "aP" : 0,
@@ -451,7 +522,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_icons.scss" : {
       "aP" : 0,
@@ -466,7 +537,7 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
     },
     "\/source\/scss\/variables\/_size.scss" : {
       "aP" : 0,
@@ -481,7 +552,85 @@
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
-      "sct" : 0
+      "sct" : 1
+    },
+    "\/source\/slim\/_guideline\/_buttons.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_guideline\/_buttons.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
+    },
+    "\/source\/slim\/_guideline\/_form.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_guideline\/_form.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
+    },
+    "\/source\/slim\/_guideline\/_icons.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_guideline\/_icons.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
+    },
+    "\/source\/slim\/_guideline\/_sidebar.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_guideline\/_sidebar.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
+    },
+    "\/source\/slim\/_guideline\/_typography.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_guideline\/_typography.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
+    },
+    "\/source\/slim\/_layout\/_head.slim" : {
+      "cB" : 0,
+      "cmO" : 0,
+      "ft" : 1024,
+      "hM" : 0,
+      "llg" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/slim\/_layout\/_head.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 1,
+      "rAC" : 0
     }
   },
   "hooks" : [
@@ -1967,7 +2116,7 @@
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 1,
-      "compilerType" : 0,
+      "compilerType" : 1,
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,

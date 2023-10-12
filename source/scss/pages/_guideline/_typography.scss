@@ -1,0 +1,88 @@
+h1 {
+  margin-bottom: $gap-x5;
+  @include title($title-x16);
+}
+h2 {
+  margin-bottom: $gap-x5;
+  @include title($title-x14);
+}
+h3 {
+  margin-bottom: $gap-x5;
+  @include title($title-x12);
+}
+h4 {
+  margin-bottom: $gap-x5;
+  @include title($headline-x10);
+}
+h5 {
+  margin-bottom: $gap-x5;
+  @include title($headline-x8);
+}
+h6 {
+  margin-bottom: $gap-x5;
+  @include title($headline-x6);
+
+  &.x5 {
+    @include title($headline-x5);
+  }
+}
+
+p {
+  margin-bottom: $gap-x5;
+  @include text($body-normal-x5);
+
+  b {
+    @include text($body-bold-x5);
+  }
+
+  &.x4 {
+    @include text($body-normal-x4);
+
+    b {
+      @include text($body-bold-x4);
+    }
+  }
+
+  &.cx4 {
+    @include text($caption-normal-x4,$caption);
+
+    b {
+      @include text($caption-bold-x4,$caption);
+    }
+  }
+
+  &.cx3 {
+    @include text($caption-normal-x3,$caption);
+
+    b {
+      @include text($caption-bold-x3,$caption);
+    }
+  }
+
+  &.sx10 {
+    @include subline($subline-x10);
+  }
+  &.sx8 {
+    @include subline($subline-x8);
+  }
+  &.sx6 {
+    @include subline($subline-x6);
+  }
+  &.sx5 {
+    @include subline($subline-x5);
+  }
+}
+
+ul {
+  @include ul;
+}
+ol {
+  @include ol;
+}
+
+blockquote {
+  @include blockquote;
+}
+table {
+  @include table;
+}

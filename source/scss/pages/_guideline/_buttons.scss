@@ -1,0 +1,7 @@
+.item {
+  width: 100%;
+  gap: $gap-x4;
+  margin-bottom: $gap-x4;
+  flex-wrap: wrap;
+  @include flex(row,flex-start,flex-start)
+}

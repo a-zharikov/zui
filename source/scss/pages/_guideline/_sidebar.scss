@@ -1,0 +1,57 @@
+.sidebar {
+  height: 100vh;
+  background: $white;
+  padding: $gap-x5;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  @include flex(column,flex-start,stretch);
+
+  &-header {
+    gap: $gap-x1;
+    padding-bottom: $gap-x6;
+    margin-bottom: $gap-x6;
+    @include flex(row,center,center);
+    @include border(0,0,1,0,$caption,.2);
+
+    span {
+      position: relative;
+      gap: $gap-x1;
+      @include text($headline-x6,$caption);
+      @include flex(row,flex-start,flex-start);
+
+      &::after {
+        content: attr(data-version);
+        opacity: .4;
+        @include text($caption-normal-x3);
+      }
+    }
+  }
+
+  &-body {
+    gap: $gap-x1;
+    flex: 1 0 auto;
+    @include flex(column,flex-start,stretch);
+
+    a {
+      text-decoration: none;
+      font: $body-bold-x4;
+      padding: $gap-x2;
+      @include text($body-bold-x4, $heading);
+      @include transition;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &-footer {
+    @include flex(row,center,center);
+
+    a {
+      text-decoration: none;
+      @include text($body-normal-x4,$caption)
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.icons {
+  width: 100%;
+  margin-bottom: $gap-x6;
+  @include grid(repeat(auto-fill, minmax(100px, 1fr)),auto,$gap-x10);
+
+  i {
+    font-size: 40px;
+    text-align: center;
+    gap: $gap-x2;
+    @include flex(column,center,cenrter);
+
+    span {
+      font: 500 12px/12px 'Roboto';
+    }
+  }
+}

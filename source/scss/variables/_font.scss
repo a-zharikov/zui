@@ -1,3 +1,7 @@
+// Font family
+$ff: 'Roboto';
+$icons: "Icons";
+
 // Font size
 $fs-x1: 4px;
 $fs-x2: 8px;
@@ -57,3 +61,35 @@ $td-u: underline;
 $td-lt: line-through;
 $tc-u: uppercase;
 $tc-c: capitalize;
+
+// Title
+$title-x12: #{$fw-b} #{$fs-x12}/#{$lh-x12} #{$ff};
+$title-x14: #{$fw-b} #{$fs-x14}/#{$lh-x14} #{$ff};
+$title-x16: #{$fw-b} #{$fs-x16}/#{$lh-x16} #{$ff};
+
+$headline-x5: #{$fw-b} #{$fs-x5}/#{$lh-x7} #{$ff};
+$headline-x6: #{$fw-b} #{$fs-x6}/#{$lh-x8} #{$ff};
+$headline-x8: #{$fw-b} #{$fs-x8}/#{$lh-x10} #{$ff};
+$headline-x10: #{$fw-b} #{$fs-x10}/#{$lh-x10} #{$ff};
+
+// Subline
+$subline-x5: #{$fw-r} #{$fs-x5}/#{$lh-x7} #{$ff};
+$subline-x6: #{$fw-r} #{$fs-x6}/#{$lh-x8} #{$ff};
+$subline-x8: #{$fw-r} #{$fs-x8}/#{$lh-x10} #{$ff};
+$subline-x10: #{$fw-r} #{$fs-x10}/#{$lh-x10} #{$ff};
+
+// Paragraphs
+$body-normal-x4: #{$fw-r} #{$fs-x4}/#{$lh-x6} #{$ff};
+$body-bold-x4: #{$fw-b} #{$fs-x4}/#{$lh-x6} #{$ff};
+$body-normal-x5: #{$fw-r} #{$fs-x5}/#{$lh-x7} #{$ff};
+$body-bold-x5: #{$fw-b} #{$fs-x5}/#{$lh-x7} #{$ff};
+
+$caption-normal-x3: #{$fw-r} #{$fs-x3}/#{$lh-x5} #{$ff};
+$caption-bold-x3: #{$fw-sb} #{$fs-x3}/#{$lh-x5} #{$ff};
+$caption-normal-x4: #{$fw-r} #{$fs-x4}/#{$lh-x6} #{$ff};
+$caption-bold-x4: #{$fw-sb} #{$fs-x4}/#{$lh-x6} #{$ff};
+
+// Button
+$large: #{$fw-sb} #{$fs-x6}/#{$lh-x6} #{$ff};
+$middle: #{$fw-sb} #{$fs-x5}/#{$lh-x5} #{$ff};
+$small: #{$fw-m} #{$fs-x4}/#{$lh-x4} #{$ff};

@@ -1,29 +1,29 @@
 // Цвета
 $colors: (
   primary: (background-color: $primary, color: $white),
-  secondary: (background-color: $secondary, color: $text),
-  tertiary: (background-color: $text, color: $white),
+  secondary: (background-color: $secondary, color: $heading),
+  tertiary: (background-color: $heading, color: $white),
   success: (background-color: $success, color: $white),
   danger: (background-color: $danger, color: $white),
 );
 
 $sizes: (
-  large: (font-size: 24px, line-height: 24px, weight: 600, padding: 16px 24px),
-  middle: (font-size: 20px, line-height: 20px, weight: 600, padding: 12px 16px),
-  small: (font-size: 16px, line-height: 16px, weight: 500, padding: 8px 12px)
+  large: (font: $large, padding: $gap-x4 $gap-x6),
+  middle: (font: $middle, padding: $gap-x3 $gap-x4),
+  small: (font: $small, padding: $gap-x2 $gap-x3)
 );
 
 $outline: (
-  primary: (background-color: $white, color: $primary, box-shadow: inset 0 0 0 2px $primary),
-  secondary: (background-color: $white, color: $text, box-shadow: inset 0 0 0 2px $secondary),
-  tertiary: (background-color: $white, color: $text, box-shadow: inset 0 0 0 2px $text),
-  success: (background-color: $white, color: $text, box-shadow: inset 0 0 0 2px $success),
-  danger: (background-color: $white, color: $text, box-shadow: inset 0 0 0 2px $danger)
+  primary: (background-color: $white, color: $primary, box-shadow: inset 0 0 0 $bw-x0-5 $primary),
+  secondary: (background-color: $white, color: $heading, box-shadow: inset 0 0 0 $bw-x0-5 $secondary),
+  tertiary: (background-color: $white, color: $heading, box-shadow: inset 0 0 0 $bw-x0-5 $heading),
+  success: (background-color: $white, color: $heading, box-shadow: inset 0 0 0 $bw-x0-5 $success),
+  danger: (background-color: $white, color: $heading, box-shadow: inset 0 0 0 $bw-x0-5 $danger)
 );
 
 $hover: (
   primary: (background-color: $primary-hover, color: $white),
-  secondary: (background-color: $secondary-hover, color: $text),
+  secondary: (background-color: $secondary-hover, color: $heading),
   tertiary: (background-color: $tertiary-hover, color: $white),
   success: (background-color: $success-hover, color: $white),
   danger: (background-color: $danger-hover, color: $white)
@@ -32,15 +32,15 @@ $hover: (
 $transparent: (
   primary: $primary,
   secondary: $secondary,
-  tertiary: $text,
+  tertiary: $heading,
   success: $success,
   danger: $danger
 );
 
 $pressed: (
   primary: (background-color: $primary-pressed, color: $white),
-  secondary: (background-color: $secondary-pressed, color: $text),
-  tertiary: (background-color: $text, color: $white),
+  secondary: (background-color: $secondary-pressed, color: $heading),
+  tertiary: (background-color: $heading, color: $white),
   success: (background-color: $success-pressed, color: $white),
   danger: (background-color: $danger-pressed, color: $white)
 );
@@ -50,7 +50,7 @@ $pressed: (
   width: auto;
   cursor: pointer;
   box-sizing: border-box;
-  gap: 8px;
+  gap: $gap-x2;
   border: 0;
   border-radius: .5em;
   text-decoration: none;
@@ -63,26 +63,24 @@ $pressed: (
 
   &::after {
     content: '';
-    width: 100%;
-    height: 100%;
+    width: $size-100;
+    height: $size-100;
     display: block;
     position: absolute;
     background: $tr;
     z-index: -1;
     opacity: 0;
     transition: .5s;
-    transform: translateX(-100%);
-    border-radius: 4px;
-    border-top-right-radius: 100px;
+    transform: translateX(-$size-100);
+    border-radius: $br-x1;
+    border-top-right-radius: $br-100;
   }
 
   // Размеры и основные стили
   @each $size-name, $size-map in $sizes {
     &.#{$size-name} {
+      font: map-get($size-map, font);
       padding: map-get($size-map, padding);
-      font-size: map-get($size-map, font-size);
-      line-height: map-get($size-map, line-height);
-      weight: map-get($size-map, weight);
 
       // Цвета и состояния
       @each $color-name, $color-map in $colors {
@@ -99,10 +97,10 @@ $pressed: (
             color: map-get($color-map, color);
             &::after {
               opacity: 1;
-              width: calc(100% + 4px);
-              height: calc(100% + 4px);
+              width: calc($size-100 + $size-x1);
+              height: calc($size-100 + $size-x1);
               transform: translateX(0);
-              border-top-right-radius: 4px;
+              border-top-right-radius: $br-x1;
               background-color: map-get($color-map, background-color);
             }
   		    }
@@ -164,11 +162,11 @@ $pressed: (
 
   // full
   &.full {
-    width: 100%;
+    width: $size-100;
   }
   &.full_mobile {
     @include adaptive(mobile) {
-      width: 100%;
+      width: $size-100;
     }
   }
 
@@ -182,11 +180,9 @@ $pressed: (
     }
 
     &::before {
-      content: '';
-      width: .5em;
-      height: .5em;
-      border-radius: $br-100;
-      border: $bw-x0-5 dashed;
+      content: '\e916';
+      font-size: $size-100;
+      font-family: $icons;
       display: block;
       animation: rotation 2.5s infinite linear;
     }

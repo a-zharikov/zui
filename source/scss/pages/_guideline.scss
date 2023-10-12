@@ -1,0 +1,18 @@
+main {
+  position: relative;
+  @include grid(300px 1fr,auto,$gap-x8);
+
+  section {
+    box-sizing: border-box;
+    padding: $gap-x8 $gap-x8 $gap-x8 0;
+  }
+
+  hr {
+    @include hr;
+  }
+
+  @import '_guideline/_sidebar';
+  @import '_guideline/_typography';
+  @import '_guideline/_icons';
+  @import '_guideline/_buttons';
+}

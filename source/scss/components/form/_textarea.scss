@@ -6,11 +6,7 @@ textarea {
   box-sizing: border-box;
   padding: $gap-x3 $gap-x4;
   resize: vertical;
-  color: $text;
-  font: {
-    size: $fs-x4;
-    family: $ff;
-  }
+  @include text($body-normal-x4);
   @include transition(all,200ms);
   &::-webkit-resizer {
     display: block;

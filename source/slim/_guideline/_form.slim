@@ -1,0 +1,85 @@
+h4 id="form" Форма
+form.form action="javascript"
+  .form-row
+    label.label Input defalut
+    input type="text" placeholder="Placeholder"
+  .form-row.error
+    label.label
+      | Input error
+      span Текст ошибки формы
+    input.error type="text" placeholder="Placeholder"
+  .form-row
+    label.label Input disabled
+    input type="text" disabled="disabled" placeholder="Placeholder"
+  .form-row
+    label.label File
+    .input-file
+      input type="file"
+  .form-row
+    label.label Select defalut
+    select name=""
+      option value="html" HTML
+      option value="css" CSS
+      option value="js" JavaScript
+  .form-row.error
+    label.label
+      | Select error
+      span Текст ошибки формы
+    select.error name=""
+      option value="html" HTML
+      option value="css" CSS
+      option value="js" JavaScript
+  .form-row
+    label.label Select disabled
+    select disabled="disabled" name=""
+      option value="html" HTML
+      option value="css" CSS
+      option value="js" JavaScript
+  .form-row
+    label.label Textarea defalut
+    textarea placeholder="Placeholder"
+  .form-row.error
+    label.label
+      | Textarea error
+      span Текст ошибки формы
+    textarea.error placeholder="Placeholder"
+  .form-row
+    label.label Textarea disabled
+    textarea disabled="disabled" placeholder="Placeholder"
+  .form-row
+    .radio
+      label.radio-control
+        input type="radio" name="radio" checked="checked"
+        .radio-control__indicator
+        | Checked
+      label.radio-control
+        input type="radio" name="radio"
+        .radio-control__indicator
+        | No checked
+      label.radio-control
+        input type="radio" name="radio"
+        .radio-control__indicator
+        | No checked
+      label.radio-control
+        input type="radio" name="radio" disabled="disabled"
+        .radio-control__indicator
+        | Disabled
+  .form-row
+    .checkbox
+      label.checkbox-control
+        input type="checkbox" name="checkbox" checked="checked"
+        .checkbox-control__indicator
+        | Checked
+      label.checkbox-control
+        input type="checkbox" name="checkbox"
+        .checkbox-control__indicator
+        | No checked
+      label.checkbox-control
+        input type="checkbox" name="checkbox"
+        .checkbox-control__indicator
+        | No checked
+      label.checkbox-control
+        input type="checkbox" name="checkbox" disabled="disabled"
+        .checkbox-control__indicator
+        | Disabled
+hr

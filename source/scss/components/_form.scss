@@ -12,13 +12,22 @@
     margin-bottom: $gap-x4;
 
     .label {
-      @include p;
       margin-bottom: $gap-x2;
+      @include text($body-bold-x4);
       @include flex(row,space-between,center);
+
+      @include adaptive(mobile) {
+        gap: $gap-x2;
+        @include flex(column,flex-start,flex-start);
+      }
     }
     &.error {
       .label {
-        color: $danger;
+        @include text($body-bold-x4,$danger);
+
+        span {
+          @include text($body-normal-x4,$danger);
+        }
       }
     }
   }

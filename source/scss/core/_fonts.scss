@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
-$ff: 'Roboto';
 
 @mixin font-face($fontFamily, $path, $fileName, $svgLabel, $fontWeight: normal, $fontStyle: normal) {
   @font-face {
@@ -17,7 +16,6 @@ $ff: 'Roboto';
 }
 
 // Icons
-$icons: "Icons";
 @include font-face($icons,  '/fonts/icon/', 'icomoon', 'icomoon');
 
 [class^="icon"], [class*=" icon"] {
