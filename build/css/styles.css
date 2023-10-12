@@ -1,5 +1,111 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+.icon.search:before {
+  content: "\e900";
+}
+.icon.mail:before {
+  content: "\e901";
+}
+.icon.alternate_email:before {
+  content: "\e902";
+}
+.icon.call:before {
+  content: "\e903";
+}
+.icon.send:before {
+  content: "\e904";
+}
+.icon.delete:before {
+  content: "\e905";
+}
+.icon.share:before {
+  content: "\e906";
+}
+.icon.notifications:before {
+  content: "\e907";
+}
+.icon.notifications_active:before {
+  content: "\e908";
+}
+.icon.location_on:before {
+  content: "\e909";
+}
+.icon.image:before {
+  content: "\e90a";
+}
+.icon.keyboard_command_key:before {
+  content: "\e90b";
+}
+.icon.menu:before {
+  content: "\e90c";
+}
+.icon.edit:before {
+  content: "\e90d";
+}
+.icon.more_horiz:before {
+  content: "\e90e";
+}
+.icon.more_vert:before {
+  content: "\e90f";
+}
+.icon.check:before {
+  content: "\e910";
+}
+.icon.close:before {
+  content: "\e911";
+}
+.icon.add:before {
+  content: "\e912";
+}
+.icon.remove:before {
+  content: "\e913";
+}
+.icon.arrow_left_alt:before {
+  content: "\e914";
+}
+.icon.arrow_right_alt:before {
+  content: "\e915";
+}
+.icon.autorenew:before {
+  content: "\e916";
+}
+.icon.chevron_left:before {
+  content: "\e917";
+}
+.icon.chevron_right:before {
+  content: "\e918";
+}
+.icon.expand_less:before {
+  content: "\e919";
+}
+.icon.expand_more:before {
+  content: "\e91a";
+}
+.icon.tl:before {
+  content: "\e91b";
+}
+.icon.vk:before {
+  content: "\e91c";
+}
+.icon.ok:before {
+  content: "\e91d";
+}
+.icon.tw:before {
+  content: "\e91e";
+}
+.icon.yt:before {
+  content: "\e91f";
+}
+.icon.in:before {
+  content: "\e920";
+}
+.icon.fb:before {
+  content: "\e921";
+}
+.icon.wt:before {
+  content: "\e922";
+}
+
 * {
   outline: none;
   margin-block-start: 0;
@@ -118,6 +224,26 @@ input[type=search]::-webkit-search-decoration {
 textarea {
   overflow: auto;
   vertical-align: top;
+}
+
+@font-face {
+  font-family: "Icons";
+  src: url("/fonts/icon/icomoon.eot");
+  src: url("/fonts/icon/icomoon.eot?#iefix") format("embedded-opentype"), url("/fonts/icon/icomoon.woff") format("woff"), url("/fonts/icon/icomoon.ttf") format("truetype"), url("/fonts/icon/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon], [class*=" icon"] {
+  font-family: "Icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -8436,12 +8562,13 @@ input.error {
   border: 2px solid #888888;
 }
 .checkbox-control__indicator:after {
-  content: "";
+  content: "\e910";
+  font-size: 20px;
+  font-family: "Icons";
   height: 20px;
   width: 20px;
   box-sizing: unset;
-  color: #888888;
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='check' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 768 768' style='enable-background:new 0 0 768 768;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2340b4ea;%7D%0A%3C/style%3E%3Cg id='icomoon-ignore'%3E%3C/g%3E%3Cpath class='st0' d='M282,523.6l336.4-336.4l44.7,44.7L282,612.9L104.9,435.7l44.7-44.7L282,523.6z'/%3E%3C/svg%3E%0A");
+  color: #325FEB;
   display: none;
   position: absolute;
   top: 50%;
@@ -9340,4 +9467,23 @@ section .item {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+}
+section .tablet {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 44px;
+}
+section .tablet i {
+  font-size: 40px;
+  text-align: center;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: cenrter;
+}
+section .tablet i span {
+  font: 500 12px/12px "Roboto";
 }

@@ -1,0 +1,107 @@
+.icon {
+  &.search:before {
+    content: "\e900";
+  }
+  &.mail:before {
+    content: "\e901";
+  }
+  &.alternate_email:before {
+    content: "\e902";
+  }
+  &.call:before {
+    content: "\e903";
+  }
+  &.send:before {
+    content: "\e904";
+  }
+  &.delete:before {
+    content: "\e905";
+  }
+  &.share:before {
+    content: "\e906";
+  }
+  &.notifications:before {
+    content: "\e907";
+  }
+  &.notifications_active:before {
+    content: "\e908";
+  }
+  &.location_on:before {
+    content: "\e909";
+  }
+  &.image:before {
+    content: "\e90a";
+  }
+  &.keyboard_command_key:before {
+    content: "\e90b";
+  }
+  &.menu:before {
+    content: "\e90c";
+  }
+  &.edit:before {
+    content: "\e90d";
+  }
+  &.more_horiz:before {
+    content: "\e90e";
+  }
+  &.more_vert:before {
+    content: "\e90f";
+  }
+  &.check:before {
+    content: "\e910";
+  }
+  &.close:before {
+    content: "\e911";
+  }
+  &.add:before {
+    content: "\e912";
+  }
+  &.remove:before {
+    content: "\e913";
+  }
+  &.arrow_left_alt:before {
+    content: "\e914";
+  }
+  &.arrow_right_alt:before {
+    content: "\e915";
+  }
+  &.autorenew:before {
+    content: "\e916";
+  }
+  &.chevron_left:before {
+    content: "\e917";
+  }
+  &.chevron_right:before {
+    content: "\e918";
+  }
+  &.expand_less:before {
+    content: "\e919";
+  }
+  &.expand_more:before {
+    content: "\e91a";
+  }
+  &.tl:before {
+    content: "\e91b";
+  }
+  &.vk:before {
+    content: "\e91c";
+  }
+  &.ok:before {
+    content: "\e91d";
+  }
+  &.tw:before {
+    content: "\e91e";
+  }
+  &.yt:before {
+    content: "\e91f";
+  }
+  &.in:before {
+    content: "\e920";
+  }
+  &.fb:before {
+    content: "\e921";
+  }
+  &.wt:before {
+    content: "\e922";
+  }
+}

@@ -3,10 +3,12 @@ html lang="ru"
   head
     meta charset="UTF-8"/
     meta name="viewport" content="width=device-width, initial-scale=1.0"/
+    title ZUI v 0.3
 
     link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection"
-
-    title ZUI v 0.1
+    script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"
+    script[type="text/javascript"]
+      |  $(document).ready(function() { $('.tablet i').each(function(){ var classes = $(this).attr('class').split(' '); var className = '.' + classes.join('.'); $(this).html('<span>' + className + '</span>'); }); }); 
   body
     section
       h1 Финансовый мир очнулся: выбранный нами инновационный путь развеял последние сомнения
@@ -133,6 +135,78 @@ html lang="ru"
               input type="checkbox" name="checkbox" disabled="disabled"
               .checkbox-control__indicator
               | Disabled
+      h2 Иконки
+      .tablet 
+        .tablet-row 
+          i.icon.search 
+        .tablet-row 
+          i.icon.mail
+        .tablet-row 
+          i.icon.alternate_email
+        .tablet-row 
+          i.icon.call
+        .tablet-row 
+          i.icon.send
+        .tablet-row 
+          i.icon.delete
+        .tablet-row 
+          i.icon.share
+        .tablet-row 
+          i.icon.notifications
+        .tablet-row 
+          i.icon.notifications_active
+        .tablet-row 
+          i.icon.location_on
+        .tablet-row 
+          i.icon.image
+        .tablet-row 
+          i.icon.keyboard_command_key
+        .tablet-row 
+          i.icon.menu
+        .tablet-row 
+          i.icon.edit
+        .tablet-row 
+          i.icon.more_horiz
+        .tablet-row 
+          i.icon.more_vert
+        .tablet-row 
+          i.icon.check
+        .tablet-row 
+          i.icon.close
+        .tablet-row 
+          i.icon.add
+        .tablet-row 
+          i.icon.remove
+        .tablet-row 
+          i.icon.arrow_left_alt
+        .tablet-row 
+          i.icon.arrow_right_alt
+        .tablet-row 
+          i.icon.autorenew
+        .tablet-row 
+          i.icon.chevron_left
+        .tablet-row 
+          i.icon.chevron_right
+        .tablet-row 
+          i.icon.expand_less
+        .tablet-row 
+          i.icon.expand_more
+        .tablet-row 
+          i.icon.tl
+        .tablet-row 
+          i.icon.vk
+        .tablet-row 
+          i.icon.ok
+        .tablet-row 
+          i.icon.tw
+        .tablet-row 
+          i.icon.yt
+        .tablet-row 
+          i.icon.in
+        .tablet-row 
+          i.icon.fb
+        .tablet-row 
+          i.icon.wt
       h2 Кнопки
       .item
         a.button.large.primary href="javascript:void(0);" .button.large.primary
