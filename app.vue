@@ -1,5 +1,5 @@
 <template>
   <div>
-    ZUI
+    <ContentDoc />
   </div>
 </template>

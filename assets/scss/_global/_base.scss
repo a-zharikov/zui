@@ -1,0 +1,11 @@
+html {
+  height: $zui-100p;
+  overflow-x: hidden;
+
+  body {
+    background-color: $bg;
+    height: $zui-100p;
+    overflow-x: hidden;
+    @include text($normal-x5);
+  }
+}
