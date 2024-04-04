@@ -1,5 +1,4 @@
 <template>
-  <div>
-    <ContentDoc />
-  </div>
+  <LayoutHeader />
+  <ContentDoc />
 </template>
