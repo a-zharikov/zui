@@ -1,11 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     '@nuxt/content',
-    '@nuxthq/studio'
+    '@nuxt/image',
+    'nuxt-icon'
   ],
   content: {
+    documentDriven: true,
     highlight: {
       theme: {
         default: 'github-light',
@@ -18,4 +19,4 @@ export default defineNuxtConfig({
     }
   },
   css: ['~/assets/scss/styles.scss']
-})
+});
