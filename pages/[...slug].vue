@@ -1,9 +1,5 @@
 <template>
-  <slot />
+  <main>
+    <ContentDoc />
+  </main>
 </template>
-
-<script setup>
-definePageMeta({
-  layout: 'pages'
-})
-</script>

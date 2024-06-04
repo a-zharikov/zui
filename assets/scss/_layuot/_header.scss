@@ -1,0 +1,151 @@
+header {
+  max-width: $grid;
+  margin: 0 auto $zui-40;
+  padding: $zui-12;
+  box-sizing: border-box;
+  border-bottom: 1px solid $pages;
+  position: relative;
+  z-index: 1;
+  @include flex($rw,$sb,$cr,0);
+  
+  @include screen(0,1023) {
+    margin-bottom: $zui-20;
+    padding: $zui-8 0;
+  }
+  
+  nav {
+    @include screen(0,1023) {
+      width: $zui-100p;
+      height: 100vh;
+      position: absolute;
+      top: $zui-48;
+      left: 0;
+      background: $white;
+      box-sizing: border-box;
+      display: none;
+      pointer-events: none;
+      border-top: 1px solid $pages;
+      @include transition;
+      
+      &.active {
+        display: block;
+        pointer-events: all;
+      }
+    }
+    
+    ul {
+      margin-bottom: 0;
+      @include flex($rw,$sb,$cr,$zui-24);
+      
+      @include screen(0,1023) {
+        @include flex($cl,$sb,$cr,0);
+      }
+
+      li {
+        position: relative;
+        margin-bottom: -1px !important;
+        border-bottom: 2px solid $tr;
+        @include transition;
+        
+        @include screen(0,1023) {
+          width: $zui-100p;
+          
+          &:not(&:last-child) {
+            border-bottom: 1px solid $pages;
+          }
+        }
+
+        a {
+          padding: $zui-12 0;
+          text-decoration: none;
+          display: block;
+          @include text($normal-x5,$border);
+          @include transition;
+
+          @include screen(0,1023) {
+            width: $zui-100p;
+          }
+
+          &:hover {
+            color: $caption;
+          }
+        }
+
+        &::before {
+          display: none;
+        }
+
+        &:last-child {
+
+          @include screen(0,1023) {
+            border: 0 !important;
+          }
+        }
+
+        &.active {
+          border-bottom: 2px solid $primary;
+          
+          @include screen(0,1023) {
+            border-color: $pages;
+          }
+
+          a {
+            color: $primary;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    text-decoration: none;
+    @include flex($rw,$fs,$cr,$zui-8);
+
+    &-text {
+      text-transform: uppercase;
+      @include text($bold-x5,$border);
+    }
+  }
+
+  .git {
+    color: $border;
+    @include transition;
+
+    @include screen(0,1023) {
+      display: none;
+    }
+
+    &:hover {
+      color: $body;
+    }
+  }
+
+  .menu {
+    width: $zui-32;
+    height: $zui-32;
+    color: $border;
+    background: $tr;
+    @include icon(28,$border);
+    @include flex($rw,$cr,$cr,0);
+    @include transition;
+
+    &::before {
+      content: 'menu';
+    }
+
+    &.active {
+      &::before {
+        content: 'close';
+      }
+    }
+    
+    @include screen(1024) {
+      display: none;
+    }
+
+    &:hover {
+      color: $body;
+    }
+  }
+}

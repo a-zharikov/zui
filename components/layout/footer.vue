@@ -16,62 +16,64 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '~/assets/scss/styles';
+  // @import '~/assets/scss/styles';
 
-  footer {
-    margin-top: $zui-40;
-    padding: $zui-12 0;
-    box-sizing: border-box;
-    border-top: 1px solid $pages;
-    position: relative;
-    z-index: 1;
-    @include flex($rw,$sb,$cr,0);
+  // footer {
+  //   max-width: $grid;
+  //   margin: $zui-40 auto 0;
+  //   padding: $zui-12;
+  //   box-sizing: border-box;
+  //   border-top: 1px solid $pages;
+  //   position: relative;
+  //   z-index: 1;
+  //   @include flex($rw,$sb,$cr,0);
     
-    @include screen(0,1023) {
-      margin-top: $zui-20;
-    }
+  //   @include screen(0,1023) {
+  //     margin-top: $zui-20;
+  //   }
     
-    @include mq(mobile) {
-      @include flex($cl,$sb,$cr,$zui-8);
-    }
+  //   @include mq(mobile) {
+  //     @include flex($cl,$sb,$cr,$zui-8);
+  //   }
 
-    p {
-      @include text($normal-x3,$border);
-    }
+  //   p {
+  //     @include text($normal-x3,$border);
+  //     margin-bottom: 0 !important;
+  //   }
 
-    .link {
-      @include flex($rw,$fs,$cr,$zui-8);
+  //   .link {
+  //     @include flex($rw,$fs,$cr,$zui-8);
       
-      a {
-        width: $zui-28;
-        height: $zui-28;
-        color: $border;
-        @include flex($rw,$cr,$cr,0);
-        @include transition;
+  //     a {
+  //       width: $zui-28;
+  //       height: $zui-28;
+  //       color: $border;
+  //       @include flex($rw,$cr,$cr,0);
+  //       @include transition;
 
-        &.git {
-          &:hover {
-            color: $body;
-          }
-        }
+  //       &.git {
+  //         &:hover {
+  //           color: $body;
+  //         }
+  //       }
 
-        &.npm {
-          &:hover {
-            color: $npm;
-          }
-        }
+  //       &.npm {
+  //         &:hover {
+  //           color: $npm;
+  //         }
+  //       }
 
-        img {
-          opacity: .6;
-          filter: grayscale(100%);
-          @include transition;
+  //       img {
+  //         opacity: .6;
+  //         filter: grayscale(100%);
+  //         @include transition;
 
-          &:hover {
-            opacity: 1;
-            filter: grayscale(0);
-          }
-        }
-      }
-    }
-  }
+  //         &:hover {
+  //           opacity: 1;
+  //           filter: grayscale(0);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 </style>

@@ -1,212 +1,167 @@
 <template>
   <header>
-    <NuxtLink to="/" class="logo" @click.prevent="toggleNav">
+    <NuxtLink to="/" class="logo">
       <NuxtImg src="/logo.svg" height="28" />
       <div class="logo-text">ui</div>
     </NuxtLink>
-    <!-- <nav :class="{ active: isNavActive }">
-      <ul>
-        <li v-for="item in menuItems" :key="item.text" :class="{ active: isActive(item.path) }">
-          <NuxtLink :href="item.path">{{ item.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav> -->
     <NuxtLink to="https://github.com/a-zharikov/ui" class="git" target="_blank">
       <Icon name="uil:github" size="24"/>
     </NuxtLink>
-    <button @click.prevent="toggleNav" class="menu" :class="{ active: isNavActive }"></button>
   </header>
 </template>
 
-<script setup>
-  import { ref } from 'vue';
-
-  const isNavActive = ref(false);
-
-  function toggleNav() {
-    isNavActive.value = !isNavActive.value;
-    // Добавление или удаление класса __screen в зависимости от состояния isNavActive
-    document.documentElement.classList.toggle('__screen', isNavActive.value);
-    document.body.classList.toggle('__screen', isNavActive.value);
-  }
-
-  function deactivateNav() {
-    if (isNavActive.value) {
-      isNavActive.value = false;
-      // Удаление класса __screen, так как навигация деактивирована
-      document.documentElement.classList.remove('__screen');
-      document.body.classList.remove('__screen');
-    }
-  }
-
-  // Menu
-  import { useRoute } from 'vue-router'
-
-  const route = useRoute()
-  const menuItems = [
-    { path: '/start', text: 'Документация' },
-    { path: '/history', text: 'История' },
-    // Добавьте другие пункты меню
-  ]
-
-  function isActive(path) {
-    return route.path === path
-  }
-</script>
-
 <style lang="scss" scoped>
-  @import '~/assets/scss/styles';
+  // @import '~/assets/scss/styles';
 
-  header {
-    top: 0;
-    position: sticky;
-    background: $white;
-    border-bottom: 1px solid $pages;
-    box-sizing: border-box;
-    padding: $zui-12 0;
-    margin-bottom: $zui-40;
-    z-index: 3;
-    @include flex($rw,$sb,$cr,0);
+  // header {
+  //   max-width: $grid;
+  //   margin: 0 auto $zui-40;
+  //   padding: $zui-12;
+  //   box-sizing: border-box;
+  //   border-bottom: 1px solid $pages;
+  //   position: relative;
+  //   z-index: 1;
+  //   @include flex($rw,$sb,$cr,0);
     
-    @include screen(0,1023) {
-      margin-bottom: $zui-20;
-      padding: $zui-8 0;
-    }
+  //   @include screen(0,1023) {
+  //     margin-bottom: $zui-20;
+  //     padding: $zui-8 0;
+  //   }
     
-    nav {
-      @include screen(0,1023) {
-        width: $zui-100p;
-        height: 100vh;
-        position: absolute;
-        top: $zui-48;
-        left: 0;
-        background: $white;
-        box-sizing: border-box;
-        display: none;
-        pointer-events: none;
-        border-top: 1px solid $pages;
-        @include transition;
+  //   nav {
+  //     @include screen(0,1023) {
+  //       width: $zui-100p;
+  //       height: 100vh;
+  //       position: absolute;
+  //       top: $zui-48;
+  //       left: 0;
+  //       background: $white;
+  //       box-sizing: border-box;
+  //       display: none;
+  //       pointer-events: none;
+  //       border-top: 1px solid $pages;
+  //       @include transition;
         
-        &.active {
-          display: block;
-          pointer-events: all;
-        }
-      }
+  //       &.active {
+  //         display: block;
+  //         pointer-events: all;
+  //       }
+  //     }
       
-      ul {
-        margin-bottom: 0;
-        @include flex($rw,$sb,$cr,$zui-24);
+  //     ul {
+  //       margin-bottom: 0;
+  //       @include flex($rw,$sb,$cr,$zui-24);
         
-        @include screen(0,1023) {
-          @include flex($cl,$sb,$cr,0);
-        }
+  //       @include screen(0,1023) {
+  //         @include flex($cl,$sb,$cr,0);
+  //       }
 
-        li {
-          position: relative;
-          margin-bottom: -1px !important;
-          border-bottom: 2px solid $tr;
-          @include transition;
+  //       li {
+  //         position: relative;
+  //         margin-bottom: -1px !important;
+  //         border-bottom: 2px solid $tr;
+  //         @include transition;
           
-          @include screen(0,1023) {
-            width: $zui-100p;
+  //         @include screen(0,1023) {
+  //           width: $zui-100p;
             
-            &:not(&:last-child) {
-              border-bottom: 1px solid $pages;
-            }
-          }
+  //           &:not(&:last-child) {
+  //             border-bottom: 1px solid $pages;
+  //           }
+  //         }
 
-          a {
-            padding: $zui-12 0;
-            text-decoration: none;
-            display: block;
-            @include text($normal-x5,$border);
-            @include transition;
+  //         a {
+  //           padding: $zui-12 0;
+  //           text-decoration: none;
+  //           display: block;
+  //           @include text($normal-x5,$border);
+  //           @include transition;
 
-            @include screen(0,1023) {
-              width: $zui-100p;
-            }
+  //           @include screen(0,1023) {
+  //             width: $zui-100p;
+  //           }
 
-            &:hover {
-              color: $caption;
-            }
-          }
+  //           &:hover {
+  //             color: $caption;
+  //           }
+  //         }
 
-          &::before {
-            display: none;
-          }
+  //         &::before {
+  //           display: none;
+  //         }
 
-          &:last-child {
+  //         &:last-child {
 
-            @include screen(0,1023) {
-              border: 0 !important;
-            }
-          }
+  //           @include screen(0,1023) {
+  //             border: 0 !important;
+  //           }
+  //         }
 
-          &.active {
-            border-bottom: 2px solid $primary;
+  //         &.active {
+  //           border-bottom: 2px solid $primary;
             
-            @include screen(0,1023) {
-              border-color: $pages;
-            }
+  //           @include screen(0,1023) {
+  //             border-color: $pages;
+  //           }
 
-            a {
-              color: $primary;
-              cursor: default;
-            }
-          }
-        }
-      }
-    }
+  //           a {
+  //             color: $primary;
+  //             cursor: default;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
 
-    .logo {
-      text-decoration: none;
-      @include flex($rw,$fs,$cr,$zui-8);
+  //   .logo {
+  //     text-decoration: none;
+  //     @include flex($rw,$fs,$cr,$zui-8);
 
-      &-text {
-        text-transform: uppercase;
-        @include text($bold-x5,$border);
-      }
-    }
+  //     &-text {
+  //       text-transform: uppercase;
+  //       @include text($bold-x5,$border);
+  //     }
+  //   }
 
-    .git {
-      color: $border;
-      @include transition;
+  //   .git {
+  //     color: $border;
+  //     @include transition;
 
-      @include screen(0,1023) {
-        display: none;
-      }
+  //     @include screen(0,1023) {
+  //       display: none;
+  //     }
 
-      &:hover {
-        color: $body;
-      }
-    }
+  //     &:hover {
+  //       color: $body;
+  //     }
+  //   }
 
-    .menu {
-      width: $zui-32;
-      height: $zui-32;
-      color: $border;
-      background: $tr;
-      @include icon(28,$border);
-      @include flex($rw,$cr,$cr,0);
-      @include transition;
+  //   .menu {
+  //     width: $zui-32;
+  //     height: $zui-32;
+  //     color: $border;
+  //     background: $tr;
+  //     @include icon(28,$border);
+  //     @include flex($rw,$cr,$cr,0);
+  //     @include transition;
 
-      &::before {
-        content: 'menu';
-      }
+  //     &::before {
+  //       content: 'menu';
+  //     }
 
-      &.active {
-        &::before {
-          content: 'close';
-        }
-      }
+  //     &.active {
+  //       &::before {
+  //         content: 'close';
+  //       }
+  //     }
       
-      @include screen(1024) {
-        display: none;
-      }
+  //     @include screen(1024) {
+  //       display: none;
+  //     }
 
-      &:hover {
-        color: $body;
-      }
-    }
-  }
+  //     &:hover {
+  //       color: $body;
+  //     }
+  //   }
+  // }
 </style>

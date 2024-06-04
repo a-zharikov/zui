@@ -1,10 +1,7 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
-  modules: [
-    '@nuxt/content',
-    '@nuxt/image',
-    'nuxt-icon'
-  ],
+  devtools: { enabled: true },
+  modules: ['@nuxt/content', '@nuxt/image','nuxt-icon'],
   content: {
     documentDriven: true,
     highlight: {
@@ -14,9 +11,10 @@ export default defineNuxtConfig({
       },
       langs: [
         'html',
-        'scss'
+        'scss',
+        'css'
       ]
     }
   },
-  css: ['~/assets/scss/styles.scss']
-});
+  css: ['@/assets/scss/styles.scss'],
+})
