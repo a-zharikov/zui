@@ -4,10 +4,10 @@
     <div class="hellow-sub">User Interface</div>
     <div class="hellow-text">Простой и легкий SCSS фреймворк</div>
     <div class="hellow-size"><span>50kb</span></div>
-    <div class="hellow-button">
-      <NuxtLink class="button middle primary mobile" to="/">Установка</NuxtLink>
-      <NuxtLink class="button middle tertiary transparent mobile" to="/">Как это работает?</NuxtLink>
-    </div>
+    <!-- <div class="hellow-button">
+      <NuxtLink class="button middle primary mobile" to="/start">Установка</NuxtLink>
+      <NuxtLink class="button middle tertiary transparent mobile" to="/start">Как это работает?</NuxtLink>
+    </div> -->
   </div>
 </template>
 

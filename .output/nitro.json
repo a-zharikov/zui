@@ -1,6 +1,6 @@
 {
-  "date": "2024-04-11T08:45:53.680Z",
-  "preset": "static",
+  "date": "2024-04-19T08:50:51.711Z",
+  "preset": "nitro-prerender",
   "framework": {
     "name": "nuxt",
     "version": "3.11.1"

@@ -41,7 +41,7 @@ const isNavActive = ref(false);
 const route = useRoute();
 
 const menuItems = ref([
-  { path: "/start", text: "Начало работы", isGroup: false },
+  { path: "/", text: "Начало работы", isGroup: false },
   {
     text: "Переменные",
     isGroup: true,

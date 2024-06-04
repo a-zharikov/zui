@@ -23,7 +23,7 @@ head:
 `@include bottom_center` - снизу по центру;  
 `@include bottom_left` - снизу слево;  
 `@include bottom_right` - снизу справа;  
-`@include left_center` - слева по центру;  
+`@include center-l` - слева по центру;  
 `@include right_center` - справа по центру.
 ### SCSS
 ```scss

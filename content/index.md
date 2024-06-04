@@ -1,6 +1,6 @@
 ---
-title: 'Начало работы // ZUI'
-description: 'Установка фрейморка ZUI'
+title: 'ZUI'
+description: 'Фрейморк ZUI'
 image: '/public/favicon.icn'
 head:
   meta:

@@ -4,13 +4,13 @@
       <NuxtImg src="/logo.svg" height="28" />
       <div class="logo-text">ui</div>
     </NuxtLink>
-    <nav :class="{ active: isNavActive }">
+    <!-- <nav :class="{ active: isNavActive }">
       <ul>
         <li v-for="item in menuItems" :key="item.text" :class="{ active: isActive(item.path) }">
-          <NuxtLink :to="item.path">{{ item.text }}</NuxtLink>
+          <NuxtLink :href="item.path">{{ item.text }}</NuxtLink>
         </li>
       </ul>
-    </nav>
+    </nav> -->
     <NuxtLink to="https://github.com/a-zharikov/ui" class="git" target="_blank">
       <Icon name="uil:github" size="24"/>
     </NuxtLink>
@@ -45,6 +45,7 @@
   const route = useRoute()
   const menuItems = [
     { path: '/start', text: 'Документация' },
+    { path: '/history', text: 'История' },
     // Добавьте другие пункты меню
   ]
 
@@ -62,6 +63,7 @@
     background: $white;
     border-bottom: 1px solid $pages;
     box-sizing: border-box;
+    padding: $zui-12 0;
     margin-bottom: $zui-40;
     z-index: 3;
     @include flex($rw,$sb,$cr,0);
