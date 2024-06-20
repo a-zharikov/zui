@@ -22,10 +22,6 @@ nav {
         &:hover, &.router-link-active {
           color: $primary;
         }
-        
-        &.router-link-active {
-          @include text($bold-x4,$primary);
-        }
       }
 
       ul {
@@ -46,10 +42,6 @@ nav {
       }
       
       &::before {
-        display: none;
-      }
-
-      &:first-child {
         display: none;
       }
     }
